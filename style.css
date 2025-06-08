@@ -89,4 +89,14 @@ h1{
         font-size:5vh;
         min-width:270px;
     }
+
+    .videoContainer{
+        display:flex;
+        justify-content:center;
+    }
+
+    iframe{
+        border:0.5rem solid rgba(255, 255, 255,0.1);
+        border-radius:1rem;
+    }
 }
