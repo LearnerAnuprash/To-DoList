@@ -15,6 +15,8 @@ h1{
 {
     h1{
         min-width:11.21rem;
+        font-family:cursive;
+        font-size:5vh;
     }
 
     .topContainer{
@@ -48,10 +50,13 @@ h1{
         border-radius:2rem;
         margin-left:2rem;
         height:2.1rem;
+        border:none;
+        text-align:center;
     }
 
    input[type="task"]::placeholder{
     text-align:center;
+    font-family:Helvetica, sans-serif,Arial;
    }
 
     .inputBoxAndButtonContainer{
@@ -62,13 +67,26 @@ h1{
 
     #addButton{
         border:none;
-        width:3vh;
-        height:2.9vh;
-        border-radius:0.8rem;
+        width:4vh;
+        height:4vh;
+        border-radius:4rem;
         margin-right:2rem;
+        font-size:1.2rem;
+        font-weight:bold;
+        color:rgb(2, 59, 91);
     }
 
     .addButtonContainer{
         padding-left:1vh;
+    }
+
+    .youCanDoIt{
+        color:white;
+        font-family: "Savate", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        text-align:center;
+        font-size:5vh;
+        min-width:270px;
     }
 }
