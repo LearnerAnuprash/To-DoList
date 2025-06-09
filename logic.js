@@ -83,6 +83,8 @@ function addsTask()
      listElement.innerHTML=inputList.value;
      inputList.value="";
      listCount++;
+
+      
 }
 }
 
