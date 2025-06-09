@@ -48,10 +48,14 @@ function addsTask()
 
     let listElement=document.createElement('li');
     let listNumber=document.createElement('p');
+    let tick=document.createElement('img');
+    tick.src='media/tickIcon.png';
+    tick.classList.add('tickImage');
 
     toAddTask.appendChild(containerList);
     containerList.appendChild(listNumber);
     containerList.appendChild(listElement);
+    containerList.appendChild(tick);
 
     listNumber.innerHTML=listCount;
      listElement.innerHTML=inputList.value;
