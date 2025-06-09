@@ -31,3 +31,17 @@ updateTime(); //Loads time immediately without delay
 
 
 setInterval(updateTime,1000);
+
+//For making task adding functional:
+
+let toAddTask=document.querySelector(".addedTask");
+let taskButton=document.querySelector(".addButtonContainer");
+let inputList=document.getElementById("inputBox");
+
+taskButton.addEventListener("click",()=>
+{
+    let listElement=document.createElement('li');
+    toAddTask.appendChild(listElement);
+     listElement.innerHTML=inputList.value;
+     inputList.value="";
+});
