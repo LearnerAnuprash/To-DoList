@@ -60,8 +60,18 @@ function addsTask()
     tick.src='media/tickIcon.png';
     tick.classList.add('tickImage');
 
+    tick.addEventListener("click",()=>
+    {
+        containerList.style.textDecoration="line-through";
+        listElement.style.background="rgba(248, 248, 248, 0.5)";
+    });
+
     dustbin.src='media/dustbinIcon.png';
     dustbin.classList.add('dustbinImage');
+
+    dustbin.addEventListener("click",()=>{
+        containerList.remove();
+    });
 
     toAddTask.appendChild(containerList);
     containerList.appendChild(listNumber);
@@ -86,4 +96,5 @@ inputList.addEventListener("keyup",(e)=>
         addsTask();
     }
 });
+
 
