@@ -38,10 +38,34 @@ let toAddTask=document.querySelector(".addedTask");
 let taskButton=document.querySelector(".addButtonContainer");
 let inputList=document.getElementById("inputBox");
 
-taskButton.addEventListener("click",()=>
+let listCount=1;
+
+function addsTask()
 {
+    
+    let containerList=document.createElement('div');
+    containerList.classList.add('containerForList');
+
     let listElement=document.createElement('li');
-    toAddTask.appendChild(listElement);
+    let listNumber=document.createElement('p');
+
+    toAddTask.appendChild(containerList);
+    containerList.appendChild(listNumber);
+    containerList.appendChild(listElement);
+
+    listNumber.innerHTML=listCount;
      listElement.innerHTML=inputList.value;
      inputList.value="";
+     listCount++;
+}
+
+taskButton.addEventListener("click",addsTask);
+
+inputList.addEventListener("keyup",(e)=>
+{
+    if(e.key==="Enter")
+    {
+        addsTask();
+    }
 });
+

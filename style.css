@@ -170,5 +170,43 @@ h1{
     padding-bottom:0.5rem;
 }
 
+li{
+    background-color:white;
+    border-radius: 2rem;
+    width:70%;
+    height:auto;
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    text-align:center;
+    font-family: "Savate", sans-serif;
+    list-style:none;
+}
+
+p{
+    padding:0;
+    margin:0;
+}
+
+.containerForList{
+    display:flex;
+    align-items:center;
+    margin-top:1.2rem;
+}
+
+.containerForList p{
+    background-color:rgb(19, 97, 99);
+    color:antiquewhite;
+    width:1rem;
+    border-radius:3rem;
+    text-align: center;
+    margin-right:0.4rem;
+    font-size:0.8rem;
+
+}
+
+ul{
+    padding-left:1.2rem;
+}
+
 
 }
