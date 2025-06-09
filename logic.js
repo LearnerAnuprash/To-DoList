@@ -42,6 +42,12 @@ let listCount=1;
 
 function addsTask()
 {
+    if(inputList.value==="")
+    {
+        alert("Please Enter a task!");
+    }
+
+    else{
     
     let containerList=document.createElement('div');
     containerList.classList.add('containerForList');
@@ -49,21 +55,29 @@ function addsTask()
     let listElement=document.createElement('li');
     let listNumber=document.createElement('p');
     let tick=document.createElement('img');
+    let dustbin=document.createElement('img');
+
     tick.src='media/tickIcon.png';
     tick.classList.add('tickImage');
+
+    dustbin.src='media/dustbinIcon.png';
+    dustbin.classList.add('dustbinImage');
 
     toAddTask.appendChild(containerList);
     containerList.appendChild(listNumber);
     containerList.appendChild(listElement);
     containerList.appendChild(tick);
+    containerList.appendChild(dustbin);
 
     listNumber.innerHTML=listCount;
      listElement.innerHTML=inputList.value;
      inputList.value="";
      listCount++;
 }
+}
 
 taskButton.addEventListener("click",addsTask);
+
 
 inputList.addEventListener("keyup",(e)=>
 {

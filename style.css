@@ -77,6 +77,14 @@ h1{
         color:rgb(2, 59, 91);
     }
 
+    #addButton:hover{
+        cursor:pointer;
+        transform:scale(1.15);
+        transition:transform 200ms;
+        background-color:rgb(125, 96, 2);
+        color:white;
+    }
+
     .addButtonContainer{
         padding-left:1vh;
     }
@@ -173,7 +181,7 @@ h1{
 li{
     background-color:white;
     border-radius: 2rem;
-    width:70%;
+    width:65%;
     height:auto;
     padding-top:0.3rem;
     padding-bottom:0.3rem;
@@ -236,5 +244,19 @@ ul{
     transition:background-color 200ms, border 150ms; 
 }
 
+.dustbinImage{
+    margin-left:0.6rem;
+    width:1.1rem;
+    height:auto;
+    border-radius:3rem;
+    border:0.1rem solid rgb(248, 180, 6);
+}
+
+.dustbinImage:hover{
+    cursor:pointer;
+    background-color:rgb(57, 196, 6);
+    border:0.1rem solid rgb(22, 79, 1);
+    transition:background-color 200ms, border 150ms; 
+}
 
 }
