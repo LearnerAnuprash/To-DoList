@@ -10,6 +10,7 @@ h1{
 }
 
 
+/* For display width less than 321px */
 
 @media(max-width:321px)
 {
@@ -260,3 +261,757 @@ ul{
 }
 
 }
+
+/*For device width between 320px and 640px*/
+
+@media(min-width:640px) and ( max-width:1024px)
+{
+    h1{
+        min-width:11.21rem;
+        font-family:cursive;
+        font-size:5vh;
+    }
+
+    .topContainer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-left:1.5rem;
+    margin-right:1.2rem;
+    font-family:Helvetica, sans-serif;
+    color:antiquewhite;
+}
+
+    .changeMode{
+    width:6vh;
+    height:5vh;
+    background-color:rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+    border:none;
+    border-radius:0.7rem;
+
+    }
+    
+
+    #sunImage{
+        width:4vh;
+        height:3vh;
+    }
+
+    #inputBox{
+        width:15rem;
+        border-radius:2rem;
+        margin-left:2rem;
+        height:2.1rem;
+        border:none;
+        text-align:center;
+    }
+
+   input[type="task"]::placeholder{
+    text-align:center;
+    font-family:Helvetica, sans-serif,Arial;
+   }
+
+    .inputBoxAndButtonContainer{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding-top:1rem;
+    }
+
+    #addButton{
+        border:none;
+        width:4vh;
+        height:4vh;
+        border-radius:4rem;
+        margin-right:2rem;
+        font-size:1.2rem;
+        font-weight:bold;
+        color:rgb(2, 59, 91);
+    }
+
+    #addButton:hover{
+        cursor:pointer;
+        transform:scale(1.15);
+        transition:transform 200ms;
+        background-color:rgb(125, 96, 2);
+        color:white;
+    }
+
+    .addButtonContainer{
+        padding-left:1vh;
+    }
+
+    .youCanDoIt{
+        color:white;
+        font-family: "Savate", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        text-align:center;
+        font-size:5vh;
+        min-width:270px;
+    }
+
+    .youCanDoIt p{
+        margin:0;
+        margin-top:1.5rem;
+        margin-bottom:2rem;
+    }
+
+    .videoContainer{
+        display:flex;
+        justify-content:center;
+    }
+
+    iframe{
+        border:0.5rem solid rgba(255, 255, 255,0.1);
+        border-radius:1rem;
+        min-width:268px;
+    }
+
+    .timeContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:bold;
+    font-size:5vh;
+    min-width:302px;
+}
+
+#hourBox,#minuteBox,#secondBox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    color:white;
+    background-color:rgba(54, 22, 1,0.6);
+    letter-spacing:0.5rem;
+    border-radius:1rem;
+    height:5rem;
+    font-family: 'Rajdhani', sans-serif;
+    width:5rem;
+}
+
+#hourBox:hover,
+#minuteBox:hover,
+#secondBox:hover {
+  box-shadow: 0 10px 25px rgba(255, 198, 120, 0.5),
+              0 4px 8px rgba(0, 0, 0, 0.3),
+              inset 0 0 8px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor:pointer;
+}
+
+.timebox:hover::after{
+    content: attr(data-label);
+    position: absolute;
+    bottom: -2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffd7a0;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+}
+
+
+
+.timeBoxColon{
+    padding-left:0.3rem;
+    padding-right:0.3rem;
+    color:rgba(43, 17, 0, 0.9);
+    padding-bottom:0.5rem;
+}
+
+li{
+    background-color:white;
+    border-radius: 2rem;
+    width:65%;
+    height:auto;
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    text-align:center;
+    font-family: "Savate", sans-serif;
+    list-style:none;
+}
+
+li:hover{
+    cursor:pointer;
+    box-shadow: 0 4px 12px rgba(242, 153, 0, 0.6);
+    transform:scale(1.1);
+    transition:box-shadow 200ms,transform 250ms;
+    color:antiquewhite;
+    background: linear-gradient(135deg, #15556e, #f7be68);
+
+}
+
+
+p{
+    padding:0;
+    margin:0;
+}
+
+.containerForList{
+    display:flex;
+    align-items:center;
+    margin-top:1.2rem;
+}
+
+.containerForList p{
+    background-color:rgb(19, 97, 99);
+    color:antiquewhite;
+    width:1rem;
+    border-radius:3rem;
+    text-align: center;
+    margin-right:0.4rem;
+    font-size:0.8rem;
+    font-weight:bold;
+    border:0.2rem solid rgb(101, 217, 252);
+}
+
+ul{
+    padding-left:1.2rem;
+}
+
+.tickImage{
+    margin-left:0.2rem;
+    width:1.1rem;
+    height:auto;
+    background-color:white;
+    border-radius:3rem;
+    border:0.1rem solid white;
+}
+
+.tickImage:hover{
+    cursor:pointer;
+    background-color:rgb(57, 196, 6);
+    border:0.1rem solid rgb(22, 79, 1);
+    transition:background-color 200ms, border 150ms; 
+}
+
+.dustbinImage{
+    margin-left:0.6rem;
+    width:1.1rem;
+    height:auto;
+    border-radius:3rem;
+    border:0.1rem solid rgb(248, 180, 6);
+}
+
+.dustbinImage:hover{
+    cursor:pointer;
+    background-color:rgb(57, 196, 6);
+    border:0.1rem solid rgb(22, 79, 1);
+    transition:background-color 200ms, border 150ms; 
+}
+
+}
+
+/* For display greater than 640px and less than 1024px*/
+
+@media(min-width:321px) and ( max-width:640px)
+{
+    h1{
+        min-width:11.21rem;
+        font-family:cursive;
+        font-size:5vh;
+    }
+
+    .topContainer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-left:1.5rem;
+    margin-right:1.2rem;
+    font-family:Helvetica, sans-serif;
+    color:antiquewhite;
+}
+
+    .changeMode{
+    width:6vh;
+    height:5vh;
+    background-color:rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+    border:none;
+    border-radius:0.7rem;
+
+    }
+    
+
+    #sunImage{
+        width:4vh;
+        height:3vh;
+    }
+
+    #inputBox{
+        width:15rem;
+        border-radius:2rem;
+        margin-left:2rem;
+        height:2.1rem;
+        border:none;
+        text-align:center;
+    }
+
+   input[type="task"]::placeholder{
+    text-align:center;
+    font-family:Helvetica, sans-serif,Arial;
+   }
+
+    .inputBoxAndButtonContainer{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding-top:1rem;
+    }
+
+    #addButton{
+        border:none;
+        width:4vh;
+        height:4vh;
+        border-radius:4rem;
+        margin-right:2rem;
+        font-size:1.2rem;
+        font-weight:bold;
+        color:rgb(2, 59, 91);
+    }
+
+    #addButton:hover{
+        cursor:pointer;
+        transform:scale(1.15);
+        transition:transform 200ms;
+        background-color:rgb(125, 96, 2);
+        color:white;
+    }
+
+    .addButtonContainer{
+        padding-left:1vh;
+    }
+
+    .youCanDoIt{
+        color:white;
+        font-family: "Savate", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        text-align:center;
+        font-size:5vh;
+        min-width:270px;
+    }
+
+    .youCanDoIt p{
+        margin:0;
+        margin-top:1.5rem;
+        margin-bottom:2rem;
+    }
+
+    .videoContainer{
+        display:flex;
+        justify-content:center;
+    }
+
+    iframe{
+        border:0.5rem solid rgba(255, 255, 255,0.1);
+        border-radius:1rem;
+        min-width:268px;
+    }
+
+    .timeContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:bold;
+    font-size:5vh;
+    min-width:302px;
+}
+
+#hourBox,#minuteBox,#secondBox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    color:white;
+    background-color:rgba(54, 22, 1,0.6);
+    letter-spacing:0.5rem;
+    border-radius:1rem;
+    height:5rem;
+    font-family: 'Rajdhani', sans-serif;
+    width:5rem;
+}
+
+#hourBox:hover,
+#minuteBox:hover,
+#secondBox:hover {
+  box-shadow: 0 10px 25px rgba(255, 198, 120, 0.5),
+              0 4px 8px rgba(0, 0, 0, 0.3),
+              inset 0 0 8px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor:pointer;
+}
+
+.timebox:hover::after{
+    content: attr(data-label);
+    position: absolute;
+    bottom: -2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffd7a0;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+}
+
+
+
+.timeBoxColon{
+    padding-left:0.3rem;
+    padding-right:0.3rem;
+    color:rgba(43, 17, 0, 0.9);
+    padding-bottom:0.5rem;
+}
+
+li{
+    background-color:white;
+    border-radius: 2rem;
+    width:65%;
+    height:auto;
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    text-align:center;
+    font-family: "Savate", sans-serif;
+    list-style:none;
+}
+
+li:hover{
+    cursor:pointer;
+    box-shadow: 0 4px 12px rgba(242, 153, 0, 0.6);
+    transform:scale(1.1);
+    transition:box-shadow 200ms,transform 250ms;
+    color:antiquewhite;
+    background: linear-gradient(135deg, #15556e, #f7be68);
+
+}
+
+
+p{
+    padding:0;
+    margin:0;
+}
+
+.containerForList{
+    display:flex;
+    align-items:center;
+    margin-top:1.2rem;
+}
+
+.containerForList p{
+    background-color:rgb(19, 97, 99);
+    color:antiquewhite;
+    width:1rem;
+    border-radius:3rem;
+    text-align: center;
+    margin-right:0.4rem;
+    font-size:0.8rem;
+    font-weight:bold;
+    border:0.2rem solid rgb(101, 217, 252);
+}
+
+ul{
+    padding-left:1.2rem;
+}
+
+.tickImage{
+    margin-left:0.2rem;
+    width:1.1rem;
+    height:auto;
+    background-color:white;
+    border-radius:3rem;
+    border:0.1rem solid white;
+}
+
+.tickImage:hover{
+    cursor:pointer;
+    background-color:rgb(57, 196, 6);
+    border:0.1rem solid rgb(22, 79, 1);
+    transition:background-color 200ms, border 150ms; 
+}
+
+.dustbinImage{
+    margin-left:0.6rem;
+    width:1.1rem;
+    height:auto;
+    border-radius:3rem;
+    border:0.1rem solid rgb(248, 180, 6);
+}
+
+.dustbinImage:hover{
+    cursor:pointer;
+    background-color:rgb(57, 196, 6);
+    border:0.1rem solid rgb(22, 79, 1);
+    transition:background-color 200ms, border 150ms; 
+}
+
+}
+
+
+/*For display greater than 1024px*/
+@media(min-width:1024px)
+{
+    h1{
+        min-width:11.21rem;
+        font-family:cursive;
+        font-size:5vh;
+    }
+
+    .topContainer{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    margin-left:1.5rem;
+    margin-right:1.2rem;
+    font-family:Helvetica, sans-serif;
+    color:antiquewhite;
+}
+
+    .changeMode{
+    width:6vh;
+    height:5vh;
+    background-color:rgba(255, 255, 255, 0.5);
+    cursor:pointer;
+    border:none;
+    border-radius:0.7rem;
+
+    }
+    
+
+    #sunImage{
+        width:4vh;
+        height:3vh;
+    }
+
+    #inputBox{
+        width:15rem;
+        border-radius:2rem;
+        margin-left:2rem;
+        height:2.1rem;
+        border:none;
+        text-align:center;
+    }
+
+   input[type="task"]::placeholder{
+    text-align:center;
+    font-family:Helvetica, sans-serif,Arial;
+   }
+
+    .inputBoxAndButtonContainer{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding-top:1rem;
+    }
+
+    #addButton{
+        border:none;
+        width:4vh;
+        height:4vh;
+        border-radius:4rem;
+        margin-right:2rem;
+        font-size:1.2rem;
+        font-weight:bold;
+        color:rgb(2, 59, 91);
+    }
+
+    #addButton:hover{
+        cursor:pointer;
+        transform:scale(1.15);
+        transition:transform 200ms;
+        background-color:rgb(125, 96, 2);
+        color:white;
+    }
+
+    .addButtonContainer{
+        padding-left:1vh;
+    }
+
+    .youCanDoIt{
+        color:white;
+        font-family: "Savate", sans-serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+        text-align:center;
+        font-size:5vh;
+        min-width:270px;
+    }
+
+    .youCanDoIt p{
+        margin:0;
+        margin-top:1.5rem;
+        margin-bottom:2rem;
+    }
+
+    .videoContainer{
+        display:flex;
+        justify-content:center;
+    }
+
+    iframe{
+        border:0.5rem solid rgba(255, 255, 255,0.1);
+        border-radius:1rem;
+        min-width:268px;
+    }
+
+    .timeContainer{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight:bold;
+    font-size:5vh;
+    min-width:302px;
+}
+
+#hourBox,#minuteBox,#secondBox{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    align-content:center;
+    color:white;
+    background-color:rgba(54, 22, 1,0.6);
+    letter-spacing:0.5rem;
+    border-radius:1rem;
+    height:5rem;
+    font-family: 'Rajdhani', sans-serif;
+    width:5rem;
+}
+
+#hourBox:hover,
+#minuteBox:hover,
+#secondBox:hover {
+  box-shadow: 0 10px 25px rgba(255, 198, 120, 0.5),
+              0 4px 8px rgba(0, 0, 0, 0.3),
+              inset 0 0 8px rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+  transition: all 0.3s ease;
+  cursor:pointer;
+}
+
+.timebox:hover::after{
+    content: attr(data-label);
+    position: absolute;
+    bottom: -2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1rem;
+    font-family: 'Rajdhani', sans-serif;
+    color: #ffd7a0;
+    padding: 0.2rem 0.6rem;
+    border-radius: 0.4rem;
+    opacity: 1;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    pointer-events: none;
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+}
+
+
+
+.timeBoxColon{
+    padding-left:0.3rem;
+    padding-right:0.3rem;
+    color:rgba(43, 17, 0, 0.9);
+    padding-bottom:0.5rem;
+}
+
+li{
+    background-color:white;
+    border-radius: 2rem;
+    width:65%;
+    height:auto;
+    padding-top:0.3rem;
+    padding-bottom:0.3rem;
+    text-align:center;
+    font-family: "Savate", sans-serif;
+    list-style:none;
+}
+
+li:hover{
+    cursor:pointer;
+    box-shadow: 0 4px 12px rgba(242, 153, 0, 0.6);
+    transform:scale(1.1);
+    transition:box-shadow 200ms,transform 250ms;
+    color:antiquewhite;
+    background: linear-gradient(135deg, #15556e, #f7be68);
+
+}
+
+
+p{
+    padding:0;
+    margin:0;
+}
+
+.containerForList{
+    display:flex;
+    align-items:center;
+    margin-top:1.2rem;
+}
+
+.containerForList p{
+    background-color:rgb(19, 97, 99);
+    color:antiquewhite;
+    width:1rem;
+    border-radius:3rem;
+    text-align: center;
+    margin-right:0.4rem;
+    font-size:0.8rem;
+    font-weight:bold;
+    border:0.2rem solid rgb(101, 217, 252);
+}
+
+ul{
+    padding-left:1.2rem;
+}
+
+.tickImage{
+    margin-left:0.2rem;
+    width:1.1rem;
+    height:auto;
+    background-color:white;
+    border-radius:3rem;
+    border:0.1rem solid white;
+}
+
+.tickImage:hover{
+    cursor:pointer;
+    background-color:rgb(57, 196, 6);
+    border:0.1rem solid rgb(22, 79, 1);
+    transition:background-color 200ms, border 150ms; 
+}
+
+.dustbinImage{
+    margin-left:0.6rem;
+    width:1.1rem;
+    height:auto;
+    border-radius:3rem;
+    border:0.1rem solid rgb(248, 180, 6);
+}
+
+.dustbinImage:hover{
+    cursor:pointer;
+    background-color:rgb(57, 196, 6);
+    border:0.1rem solid rgb(22, 79, 1);
+    transition:background-color 200ms, border 150ms; 
+}}
