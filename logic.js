@@ -1,6 +1,31 @@
 let hour=document.getElementById("hourBox"); // gets element by ID
 let minute=document.getElementById("minuteBox");
 let second=document.getElementById("secondBox");
+let theme=document.querySelector(".changeModeContainer");
+let body=document.body;
+let isDark=false;
+//Making functional theme toggle button
+
+function themeChange()
+{
+    if(isDark===false)
+    {
+        body.style.background="black";
+        isDark=true;
+    }
+
+    else{
+            body.style.background="linear-gradient(90deg, rgba(164, 116, 81, 1.000) 0.000%, rgba(156, 152, 129, 1.000) 16.667%, rgba(115, 160, 157, 1.000) 33.333%, rgba(59, 137, 154, 1.000) 50.000%, rgba(9, 91, 121, 1.000) 66.667%, rgba(0, 40, 71, 1.000) 83.333%, rgba(0, 1, 22, 1.000) 100.000%)";
+            isDark=false;
+        }
+}
+
+theme.addEventListener("click",themeChange);
+
+
+
+
+
 let count=1;
 
 
