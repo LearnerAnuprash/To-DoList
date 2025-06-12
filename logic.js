@@ -24,8 +24,6 @@ theme.addEventListener("click",themeChange);
 
 
 
-
-
 let count=1;
 
 

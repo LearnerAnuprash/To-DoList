@@ -9,7 +9,27 @@ h1{
     cursor:pointer;
 }
 
+.youCanDoIt{
+    display:inline-block;
+}
 
+#motivation{
+    border-right:0.2rem solid whitesmoke;
+    width:100%;
+    white-space:nowrap;
+    overflow:hidden;
+    animation:
+        typing 2s steps(13),
+        cursor .4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+    50% { border-color:transparent}
+}
+
+@keyframes typing{
+    from{width:0}
+}
 /* For display width less than 321px */
 
 @media(max-width:321px)
