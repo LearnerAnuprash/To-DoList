@@ -264,15 +264,17 @@ ul{
 
 /*For device width between 320px and 640px*/
 
-@media(min-width:640px) and ( max-width:1024px)
+@media(min-width:321px) and ( max-width:640px)
 {
     h1{
         min-width:11.21rem;
         font-family:cursive;
-        font-size:5vh;
+        font-size:8vh;
+        margin-top:1rem;
     }
 
     .topContainer{
+        margin:0px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -295,14 +297,14 @@ ul{
 
     #sunImage{
         width:4vh;
-        height:3vh;
+        height:4vh;
     }
 
     #inputBox{
-        width:15rem;
+        width:33rem;
         border-radius:2rem;
         margin-left:2rem;
-        height:2.1rem;
+        height:2.2rem;
         border:none;
         text-align:center;
     }
@@ -348,7 +350,7 @@ ul{
         font-optical-sizing: auto;
         font-style: normal;
         text-align:center;
-        font-size:5vh;
+        font-size:6vh;
     }
 
     .youCanDoIt p{
@@ -360,12 +362,16 @@ ul{
     .videoContainer{
         display:flex;
         justify-content:center;
+        width:100%;
+        height:20vh;
+        padding-bottom:2rem;
     }
 
     iframe{
         border:0.5rem solid rgba(255, 255, 255,0.1);
         border-radius:1rem;
         min-width:268px;
+        width:50%;
     }
 
     .timeContainer{
@@ -374,7 +380,7 @@ ul{
     align-items:center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight:bold;
-    font-size:5vh;
+    font-size:7vh;
     min-width:302px;
 }
 
@@ -387,9 +393,9 @@ ul{
     background-color:rgba(54, 22, 1,0.6);
     letter-spacing:0.5rem;
     border-radius:1rem;
-    height:5rem;
+    height:7rem;
     font-family: 'Rajdhani', sans-serif;
-    width:5rem;
+    width:7rem;
 }
 
 #hourBox:hover,
@@ -461,6 +467,7 @@ p{
 .containerForList{
     display:flex;
     align-items:center;
+    justify-content:center;
     margin-top:1.2rem;
 }
 
@@ -515,7 +522,7 @@ ul{
 
 /* For display greater than 640px and less than 1024px*/
 
-@media(min-width:321px) and ( max-width:640px)
+@media(min-width:640px) and ( max-width:1024px)
 {
     h1{
         min-width:11.21rem;
