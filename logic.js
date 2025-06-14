@@ -2,24 +2,30 @@ let hour=document.getElementById("hourBox"); // gets element by ID
 let minute=document.getElementById("minuteBox");
 let second=document.getElementById("secondBox");
 let theme=document.querySelector(".changeModeContainer");
+let shootingStarBackground=document.getElementById("bgVideo");
 let body=document.body;
 let isDark=false;
+videoPause=document.getElementById("videoToggleButton");
 //Making functional theme toggle button
 
 function themeChange()
 {
     if(isDark===false)
     {
-        body.style.background="black";
+        shootingStarBackground.style.display="block";
+        videoToggleBtn.style.display="block";
         isDark=true;
     }
 
     else{
+        shootingStarBackground.style.display="none";
             body.style.background="linear-gradient(90deg, rgba(164, 116, 81, 1.000) 0.000%, rgba(156, 152, 129, 1.000) 16.667%, rgba(115, 160, 157, 1.000) 33.333%, rgba(59, 137, 154, 1.000) 50.000%, rgba(9, 91, 121, 1.000) 66.667%, rgba(0, 40, 71, 1.000) 83.333%, rgba(0, 1, 22, 1.000) 100.000%)";
+            videoToggleBtn.style.display="none";
             isDark=false;
         }
 }
 
+shootingStarBackground.playbackRate=0.7;
 theme.addEventListener("click",themeChange);
 
 
@@ -121,5 +127,18 @@ inputList.addEventListener("keyup",(e)=>
         addsTask();
     }
 });
+
+const videoToggleBtn = document.getElementById("videoToggleButton");
+
+videoToggleBtn.addEventListener("click", () => {
+    if (shootingStarBackground.paused) {
+        shootingStarBackground.play();
+        videoToggleBtn.innerText = "Pause Video";
+    } else {
+        shootingStarBackground.pause();
+        videoToggleBtn.innerText = "Play Video";
+    }
+});
+
 
 
