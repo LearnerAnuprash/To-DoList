@@ -123,7 +123,7 @@ h1{
     align-items:center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight:bold;
-    font-size:5vh;
+    font-size:7vh;
     min-width:302px;
 }
 
@@ -380,7 +380,7 @@ ul{
     align-items:center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight:bold;
-    font-size:7vh;
+    font-size:9vh;
     min-width:302px;
 }
 
@@ -393,9 +393,9 @@ ul{
     background-color:rgba(54, 22, 1,0.6);
     letter-spacing:0.5rem;
     border-radius:1rem;
-    height:7rem;
+    height:6rem;
     font-family: 'Rajdhani', sans-serif;
-    width:7rem;
+    width:6rem;
 }
 
 #hourBox:hover,
@@ -527,7 +527,8 @@ ul{
     h1{
         min-width:11.21rem;
         font-family:cursive;
-        font-size:5vh;
+        font-size:7vh;
+        margin-top:2rem;
     }
 
     .topContainer{
@@ -541,8 +542,8 @@ ul{
 }
 
     .changeMode{
-    width:6vh;
-    height:5vh;
+    width:7vh;
+    height:6vh;
     background-color:rgba(255, 255, 255, 0.5);
     cursor:pointer;
     border:none;
@@ -552,27 +553,27 @@ ul{
     
 
     #sunImage{
-        width:4vh;
-        height:3vh;
+        width:5vh;
+        height:4vh;
     }
 
     #inputBox{
-        width:15rem;
+        width:45rem;
         border-radius:2rem;
         margin-left:2rem;
-        height:2.1rem;
+        height:2.6rem;
         border:none;
         text-align:center;
     }
 
-   input[type="task"]::placeholder{
+   input::placeholder{
     text-align:center;
     font-family:Helvetica, sans-serif,Arial;
    }
 
     .inputBoxAndButtonContainer{
         display:flex;
-        justify-content:space-between;
+        justify-content:center;
         align-items:center;
         padding-top:1rem;
     }
@@ -606,13 +607,13 @@ ul{
         font-optical-sizing: auto;
         font-style: normal;
         text-align:center;
-        font-size:5vh;
+        font-size:6vh;
     }
 
     .youCanDoIt p{
         margin:0;
-        margin-top:1.5rem;
-        margin-bottom:2rem;
+        margin-top:1rem;
+        margin-bottom:1.1rem;
     }
 
     .videoContainer{
@@ -624,6 +625,9 @@ ul{
         border:0.5rem solid rgba(255, 255, 255,0.1);
         border-radius:1rem;
         min-width:268px;
+        height:17rem;
+        width:30rem;
+
     }
 
     .timeContainer{
@@ -632,7 +636,7 @@ ul{
     align-items:center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight:bold;
-    font-size:5vh;
+    font-size:9.4vh;
     min-width:302px;
 }
 
@@ -645,9 +649,9 @@ ul{
     background-color:rgba(54, 22, 1,0.6);
     letter-spacing:0.5rem;
     border-radius:1rem;
-    height:5rem;
+    height:6rem;
     font-family: 'Rajdhani', sans-serif;
-    width:5rem;
+    width:6rem;
 }
 
 #hourBox:hover,
@@ -719,6 +723,7 @@ p{
 .containerForList{
     display:flex;
     align-items:center;
+    justify-content:center;
     margin-top:1.2rem;
 }
 
@@ -778,7 +783,8 @@ ul{
     h1{
         min-width:11.21rem;
         font-family:cursive;
-        font-size:5vh;
+        font-size:9vh;
+        margin-top:2rem;
     }
 
     .topContainer{
@@ -798,6 +804,8 @@ ul{
     cursor:pointer;
     border:none;
     border-radius:0.7rem;
+    margin-right:2rem;
+    margin-bottom:2rem;
 
     }
     
@@ -808,7 +816,7 @@ ul{
     }
 
     #inputBox{
-        width:20rem;
+        width:33rem;
         border-radius:2rem;
         margin-left:2rem;
         height:2.1rem;
@@ -816,14 +824,14 @@ ul{
         text-align:center;
     }
 
-   input[type="task"]::placeholder{
+   input::placeholder{
     text-align:center;
     font-family:Helvetica, sans-serif,Arial;
    }
 
     .inputBoxAndButtonContainer{
         display:flex;
-        justify-content:space-between;
+        justify-content:center;
         align-items:center;
         padding-top:1rem;
     }
@@ -857,7 +865,7 @@ ul{
         font-optical-sizing: auto;
         font-style: normal;
         text-align:center;
-        font-size:5vh;
+        font-size:7vh;
         min-width:270px;
     }
 
@@ -876,6 +884,8 @@ ul{
         border:0.5rem solid rgba(255, 255, 255,0.1);
         border-radius:1rem;
         min-width:268px;
+        width:28rem;
+        height:16rem;
     }
 
     .timeContainer{
@@ -884,7 +894,7 @@ ul{
     align-items:center;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight:bold;
-    font-size:5vh;
+    font-size:10vh;
     min-width:302px;
 }
 
@@ -897,9 +907,9 @@ ul{
     background-color:rgba(54, 22, 1,0.6);
     letter-spacing:0.5rem;
     border-radius:1rem;
-    height:5rem;
+    height:7rem;
     font-family: 'Rajdhani', sans-serif;
-    width:5rem;
+    width:7rem;
 }
 
 #hourBox:hover,
@@ -943,8 +953,8 @@ ul{
 li{
     background-color:white;
     border-radius: 2rem;
-    width:65%;
-    height:auto;
+    width:50%;
+    height:1.8rem;
     padding-top:0.3rem;
     padding-bottom:0.3rem;
     text-align:center;
@@ -970,6 +980,7 @@ p{
 
 .containerForList{
     display:flex;
+    justify-content:center;
     align-items:center;
     margin-top:1.2rem;
 }
