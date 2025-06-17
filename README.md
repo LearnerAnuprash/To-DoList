@@ -39,15 +39,25 @@ A beautifully animated and interactive To-Do List web app featuring real-time cl
 📁 **Project Structure**
 
 📂 To-DoList/
+
 ├── 📄 index.html
+
 ├── 📄 style.css
+
 ├── 📄 logic.js
+
 ├── 📁 media/
+
 │ ├── video.mp4
+
 │ ├── yelloSun.png
+
 │ ├── tickIcon.png
+
 │ ├── dustbinIcon.png
+
 └── 📄 README.md
+
 
 💡 **How It Works**
 
