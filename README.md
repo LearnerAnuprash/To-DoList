@@ -72,7 +72,7 @@ A beautifully animated and interactive To-Do List web app featuring real-time cl
 
 ---
 
-🚀 **Improvements You Can Add**
+🚀 **Improvements yet to be added **
 
 - Persistent tasks using `localStorage`
 - Sound effects on button actions
