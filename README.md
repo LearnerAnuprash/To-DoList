@@ -25,8 +25,8 @@ A beautifully animated and interactive To-Do List web app featuring real-time cl
 
 🧠 **Built With**
 
-- **HTML5**: Semantic structure  
-- **CSS3**: Responsive styling, animations, gradient backgrounds  
+- **HTML5**: Semantic structure
+- **CSS3**: Responsive styling, animations, gradient backgrounds
 - **JavaScript (Vanilla)**:
   - DOM manipulation
   - Event handling
@@ -57,7 +57,6 @@ A beautifully animated and interactive To-Do List web app featuring real-time cl
 │ ├── dustbinIcon.png
 
 └── 📄 README.md
-
 
 💡 **How It Works**
 
