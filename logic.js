@@ -76,7 +76,7 @@ function addsTask() {
     let tick = document.createElement("img");
     let dustbin = document.createElement("img");
 
-    tick.src = "../media/tickIcon.png";
+    tick.src = "./media/tickIcon.png";
     tick.classList.add("tickImage");
 
     tick.addEventListener("click", () => {
@@ -84,7 +84,7 @@ function addsTask() {
       listElement.style.background = "rgba(248, 248, 248, 0.5)";
     });
 
-    dustbin.src = "../media/dustbinIcon.png";
+    dustbin.src = "./media/dustbinIcon.png";
     dustbin.classList.add("dustbinImage");
 
     dustbin.addEventListener("click", () => {
